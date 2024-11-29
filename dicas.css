@@ -1,0 +1,117 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #e3f2fd; /* Azul claro */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #0288d1; /* Azul médio */
+    color: white;
+    padding: 25px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    margin: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: #0277bd; /* Azul escuro */
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #01579b;
+    transform: scale(1.1);
+}
+
+nav a.active {
+    background-color: #01579b; /* Destaca a página ativa */
+}
+
+/* Estilos para a seção de dicas */
+#health-tips {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#health-tips h2 {
+    color: #0288d1; /* Azul médio */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#health-tips article {
+    background-color: #ffffff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#health-tips article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#health-tips img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+#health-tips img:hover {
+    transform: scale(1.05);
+}
+
+#health-tips a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #0288d1;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#health-tips a:hover {
+    background-color: #01579b;
+    transform: scale(1.1);
+}
+
+/* Estilos de responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #health-tips {
+        padding: 10px;
+    }
+
+    #health-tips article {
+        padding: 15px;
+    }
+}
